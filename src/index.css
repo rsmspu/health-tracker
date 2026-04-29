@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { margin: 0; padding: 0; min-height: 100vh; }
+
+/* iOS PWA — extend background into status bar area */
+body {
+  background-color: #fafaf9; /* stone-50 */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* iOS — disable text-size adjust on rotate */
+html { -webkit-text-size-adjust: 100%; }
+
+/* Safe area padding for notched iPhones */
+.safe-top { padding-top: env(safe-area-inset-top); }
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
