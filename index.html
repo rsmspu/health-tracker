@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+    <title>Daily Health Ledger</title>
+    <meta name="description" content="A gentle, private daily tracker for meals, medicines, water and movement. Built around a real dietician's chart." />
+
+    <!-- PWA basics -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#fafaf9" />
+
+    <!-- iOS PWA — when added to home screen, behave like an app -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Health" />
+
+    <!-- App icon for iOS home screen (180×180 is the iPhone size) -->
+    <link rel="apple-touch-icon" href="./icon-180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png" />
+
+    <!-- Splash background while loading -->
+    <style>
+      html, body { background: #fafaf9; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
